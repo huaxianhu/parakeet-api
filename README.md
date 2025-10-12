@@ -13,6 +13,8 @@
 
 ## 🛠️ 安装与配置指南
 
+> 整合包升级仅需下载该源码，解压后复制`app.py`文件，覆盖整合包中的`app.py`即可
+
 本项目支持 Windows, macOS 和 Linux。请按照以下步骤进行安装和配置。
 
 > **Win 整合包下载地址1：**   [从百度网盘下载](https://pan.baidu.com/s/1SzNAYSttjQ_RXXPpF20bxA?pwd=zm1t)
