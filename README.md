@@ -3,6 +3,10 @@
 **parakeet-api** 项目  是一个基于 **NVIDIA Parakeet-tdt-0.6b-v3** 模型的本地语音转录服务。它提供了一个与 `OpenAI API` 兼容的接口和一个简洁的 Web 用户界面，让您能够轻松、快速地将任何音视频文件转换为高精度的 SRT 字幕,同时可适配`pyVideoTrans v3.72+`。
 
 > parakeet模型目前支持英语/日语，以及其他24种欧洲语言
+>
+> Bulgarian (bg), Croatian (hr), Czech (cs), Danish (da), Dutch (nl), English (en), Estonian (et), Finnish (fi), French (fr), German (de), Greek (el), Hungarian (hu), Italian (it), Latvian (lv), Lithuanian (lt), Maltese (mt), Polish (pl), Portuguese (pt), Romanian (ro), Slovak (sk), Slovenian (sl), Spanish (es), Swedish (sv), Russian (ru), Ukrainian (uk)
+>
+
 
 ## ✨ Parakeet-API 核心优势
 
