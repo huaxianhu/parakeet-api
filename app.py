@@ -34,13 +34,13 @@ if not os.path.exists('temp_uploads'):
 
 try:
     # 这一步会下载并加载模型，需要较长时间和网络连接
-    print("\n开始下载模型 parakeet-tdt-0.6b-v2")
+    print("\n开始检测模型 parakeet-tdt-0.6b-v2 是否存在，若不存在将下载")
     from huggingface_hub import snapshot_download
 
     snapshot_download(
                 repo_id="nvidia/parakeet-tdt-0.6b-v2"
                 )
-    print("\n开始下载模型 parakeet-tdt_ctc-0.6b-ja")
+    print("\n开始检测模型 parakeet-tdt_ctc-0.6b-ja 是否存在，若不存在将下载")
     snapshot_download(
                 repo_id="nvidia/parakeet-tdt_ctc-0.6b-ja"
                 )
@@ -138,13 +138,14 @@ def transcribe_audio():
     # 用 model 参数传递特殊要求，例如 ----*---- 分隔字符串和json
     return_type = request.form.get('model', '')
     # prompt 用于获取语言
-    language = request.form.get('prompt', 'en')
+    language = request.form.get('prompt', 'default')
     model_list={
-        "en":"parakeet-tdt-0.6b-v2",
+        "default":"parakeet-tdt-0.6b-v3",
         "ja":"parakeet-tdt_ctc-0.6b-ja"
     }
     if language not in model_list:
-        return jsonify({"error": f"不支持该语言:{language}"}), 500
+        language='default'
+
 
 
     original_filename = secure_filename(file.filename)
