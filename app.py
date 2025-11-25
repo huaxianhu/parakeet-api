@@ -38,7 +38,7 @@ try:
     from huggingface_hub import snapshot_download
 
     snapshot_download(
-                repo_id="nvidia/parakeet-tdt-0.6b-v2"
+                repo_id="nvidia/parakeet-tdt-0.6b-v3"
                 )
     print("\n开始检测模型 parakeet-tdt_ctc-0.6b-ja 是否存在，若不存在将下载")
     snapshot_download(
