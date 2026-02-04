@@ -1,6 +1,11 @@
-numpy==1.26
+numpy==1.26.4
 waitress
 flask
 typing_extensions
-torch
+torch==2.7
+torchaudio==2.7
+pydub
+ten_vad
+scipy
+datasets
 nemo_toolkit[asr]

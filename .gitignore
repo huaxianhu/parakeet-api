@@ -1,7 +1,7 @@
-models/*
-temp_uploads/*
-venv
-__pycache__
 runtime
-*.bat
+models
+ffmpeg
+temp_uploads
 *.7z
+build
+dist
